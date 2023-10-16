@@ -1,5 +1,24 @@
 {% extends "network/layout.html" %}
+{% load static %}
 
 {% block body %}
-    TODO
+    {% if new_post %}
+            <form class="m-3" id="new-post-form" action="{% url 'new_post' %}" method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input class="form-control" type="text" id="title" name="title" placeholder="New Post">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" cols="20" rows="10">Enter your post here</textarea>
+                </div>
+                    <button class="btn btn-primary"  type="submit">Post</button>    
+            </form>
+    {% endif %}
+
+    <h2>All posts</h2>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static './network/index.js' %}"></script>
 {% endblock %}
