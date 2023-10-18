@@ -3,7 +3,7 @@ from django.db import models
 
 
 class User(AbstractUser):
-    pass
+    followers = models.ManyToManyField("User", related_name="following")
 
 class Post(models.Model):
     title = models.CharField(max_length=255)
@@ -24,7 +24,7 @@ class Post(models.Model):
         }
 
 class Comment(models.Model):
-    author = models.ForeignKey("User", on_delete=models.CASCADE)
-    post = models.ForeignKey("Post", on_delete=models.CASCADE)
+    author = models.ForeignKey("User", on_delete=models.CASCADE, related_name="comments")
+    post = models.ForeignKey("Post", on_delete=models.CASCADE, related_name="comments")
     body = models.TextField(blank=True)
     created = models.DateTimeField(auto_now_add=True)

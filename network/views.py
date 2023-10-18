@@ -90,5 +90,11 @@ def new_post(request):
     
 
 def all_posts(request):
-    all_posts = Post.objects.all().order_by("created") #.desc()
+    all_posts = Post.objects.all().order_by("created").desc()
     return JsonResponse([post.serialize() for post in all_posts], safe=False)
+
+@login_required
+def profile(request):
+    followers_count = request.user.followers.all().count()
+    following_count = User.objects.filter(followers=request.user).count()
+    return render(request, "network/profile.html", {"followers_count": followers_count, "following_count": following_count})
