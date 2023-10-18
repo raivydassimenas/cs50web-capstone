@@ -1,15 +1,20 @@
+import json
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 
 from .models import User, Post, Comment
 
 
 def index(request):
-    return render(request, "network/index.html", { "new_post": True })
+
+    new_post = True if request.user.is_authenticated else False
+    
+    return render(request, "network/index.html", { "new_post": new_post })
 
 
 def login_view(request):
@@ -62,7 +67,28 @@ def register(request):
         return HttpResponseRedirect(reverse("index"))
     else:
         return render(request, "network/register.html")
-    
+
+@csrf_exempt    
 @login_required
 def new_post(request):
-    return HttpResponseRedirect(reverse("index"))
+    if request.method != "POST":
+        return JsonResponse({"error": "POST request required"}, status=400)
+    
+    data = json.loads(request.body)
+    author = request.user
+    title = data.get("title", "")
+    body = data.get("body", "")
+
+    post = Post(
+        author=author,
+        title=title,
+        body=body
+    )
+    post.save()
+
+    return JsonResponse({"message": "Post saved successfully."}, status=201)
+    
+
+def all_posts(request):
+    all_posts = Post.objects.all().order_by("created") #.desc()
+    return JsonResponse([post.serialize() for post in all_posts], safe=False)

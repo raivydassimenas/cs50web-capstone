@@ -3,22 +3,24 @@
 
 {% block body %}
     {% if new_post %}
-            <form class="m-3" id="new-post-form" action="{% url 'new_post' %}" method="post">
+            <form class="m-3" id="new-post-form">
                 {% csrf_token %}
+                <h2>New Post</h2>
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
                     <input class="form-control" type="text" id="title" name="title" placeholder="New Post">
-                </div>
+                </div>  
                 <div class="mb-3">
-                    <textarea class="form-control" cols="20" rows="10">Enter your post here</textarea>
+                    <textarea class="form-control" cols="20" rows="10" name="body" id="body">Enter your post here</textarea>
                 </div>
                     <button class="btn btn-primary"  type="submit">Post</button>    
             </form>
     {% endif %}
 
-    <h2>All posts</h2>
+    <h2 class="m-3">All posts</h2>
+    <div class="m-3" id="all-posts"></div>
 {% endblock %}
 
 {% block script %}
-    <script src="{% static './network/index.js' %}"></script>
+    <script src="{% static './network/index.js' %}" defer></script>
 {% endblock %}
