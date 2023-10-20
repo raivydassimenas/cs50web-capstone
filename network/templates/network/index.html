@@ -22,9 +22,12 @@
     <div class="m-3 border p-1">
         <h3>{{ post.title }}</h3>
         <p>Written by: <a href="/profile/{{ post.author.id }}">{{ post.author }}</a></p>
-        <p>{{ post.body }}</p>
+        <p class="post-body">{{ post.body }}</p>
         <p>Likes: {{ post.likes }}</p>
         <p>Created at: {{ post.created }}</p>
+        {% if post.author == request.user %}
+        <button id="{{ post.id }}" class="btn btn-primary edit-post">Edit</button>
+        {% endif %}
     </div>   
     {% endfor %}
 

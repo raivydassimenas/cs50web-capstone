@@ -6,6 +6,7 @@ from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_http_methods
 from django.core.paginator import Paginator
 
 from .models import User, Post, Comment
@@ -141,3 +142,22 @@ def following(request):
     page = paginator.get_page(page_number)
 
     return render(request, "./network/following.html", {"page": page})
+
+@login_required
+@csrf_exempt
+@require_http_methods(["PUT"])
+def update_post(request, post_id):
+    post = Post.objects.filter(pk=post_id)
+
+    if not post.exists() or post.first().author != request.user:
+        return JsonResponse({"error": "Cannot update post"}, status=403)
+
+    post = post.first()
+    data = json.loads(request.body)
+    post.body = data["body"]
+    print(post.body)
+    post.save()
+
+    return JsonResponse({"message": "Post updated successfully"}, status=200)
+
+    
