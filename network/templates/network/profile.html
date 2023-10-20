@@ -1,11 +1,34 @@
 {% extends "network/layout.html" %}
 {% load static %}
 
+<!-- {{ request.user.id|json_script:"target_user_id" }}
+{{ user.id|json_script:"source_user_id" }} -->
+
 {% block body %}
 <div class="m-3" id="profile">
-    <h2>{{ request.user.username }}</h2>
+    <h2>{{ user.username }}</h2>
     <p>Followers: {{ followers_count }}</p>
     <p>Following: {{ following_count }}</p>
+
+    <h3>Posts</h3>
+    {% for post in posts %}
+    <div class="border m-1 p-1">
+        <h4>{{ post.title }}</h4>
+        <p>{{ post.body }}</p>
+        <p>Likes: {{ post.likes }}</p>
+        <p>Created at: {{ post.created }}</p>
+    </div>
+    {% endfor %}
+
+    {% if not same_user %}
+    <div>
+        {% if not follow %}
+        <a href="/follow/{{ user.id }}" class="btn btn-primary m-1">Follow</a>
+        {% else %}
+        <a  href="/unfollow/{{ user.id }}" class="btn btn-primary m-1">Unfollow</a>
+        {% endif %}
+    </div>
+    {% endif %}
 </div>
 {% endblock %}
 

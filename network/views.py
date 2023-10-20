@@ -13,8 +13,9 @@ from .models import User, Post, Comment
 def index(request):
 
     new_post = True if request.user.is_authenticated else False
+    all_posts = Post.objects.all()
     
-    return render(request, "network/index.html", { "new_post": new_post })
+    return render(request, "network/index.html", { "new_post": new_post, "all_posts": all_posts })
 
 
 def login_view(request):
@@ -90,11 +91,46 @@ def new_post(request):
     
 
 def all_posts(request):
-    all_posts = Post.objects.all().order_by("created").desc()
+    all_posts = Post.objects.all().order_by("-created")
     return JsonResponse([post.serialize() for post in all_posts], safe=False)
 
 @login_required
-def profile(request):
-    followers_count = request.user.followers.all().count()
-    following_count = User.objects.filter(followers=request.user).count()
-    return render(request, "network/profile.html", {"followers_count": followers_count, "following_count": following_count})
+def profile(request, user_id):
+    user = User.objects.get(pk=user_id)
+    followers_count = user.followers.all().count()
+    following_count = User.objects.filter(followers=user).count()
+    posts = Post.objects.filter(author=user).order_by("-created")
+    same_user = request.user.id == user_id
+    follow = user.followers.filter(pk=request.user.id).exists()
+    return render(request, "./network/profile.html", {"user": user, "followers_count": followers_count, "following_count": following_count, "posts": posts, "same_user": same_user, "follow": follow}, status=200)
+
+@login_required
+def follow(request, target_user_id):
+    try:
+        target_user = User.objects.get(pk=target_user_id)
+        source_user = User.objects.get(pk = request.user.id)
+        target_user.followers.add(source_user)
+        return HttpResponseRedirect(reverse("profile", args=(request.user.id,)))
+    except target_user.DoesNotExist:
+        return render(request, "./network/profile.html", {"error": "Target user does not exist"}, status=404)
+    except Exception as e:
+        return render(request, "./network/profile.html", {"error": str(e)}, status=400)
+    
+@login_required
+def unfollow(request, target_user_id):
+    try:
+        target_user = User.objects.get(pk=target_user_id)
+        source_user = User.objects.get(pk = request.user.id)
+        target_user.followers.remove(source_user)
+        return HttpResponseRedirect(reverse("profile", args=(request.user.id, )))
+    except target_user.DoesNotExist:
+        return JsonResponse({"error": "Target user does not exist"}, status=404)
+    except Exception as e:
+        return JsonResponse({"error": str(e)}, status=400)
+    
+@login_required
+def following(request):
+    users_following = request.user.following.all()
+    posts_following = Post.objects.filter(author__in=users_following).order_by("-created")
+
+    return render(request, "./network/following.html", {"posts_following": posts_following})

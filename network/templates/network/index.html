@@ -18,7 +18,15 @@
     {% endif %}
 
     <h2 class="m-3">All posts</h2>
-    <div class="m-3" id="all-posts"></div>
+    {% for post in all_posts %}
+    <div class="m-3 border p-1">
+        <h3>{{ post.title }}</h3>
+        <p>Written by: <a href="/profile/{{ post.author.id }}">{{ post.author }}</a></p>
+        <p>{{ post.body }}</p>
+        <p>Likes: {{ post.likes }}</p>
+        <p>Created at: {{ post.created }}</p>
+    </div>   
+    {% endfor %}
 {% endblock %}
 
 {% block script %}
