@@ -1,7 +1,5 @@
 function addPost(e) {
-    e.preventDefault();
-
-    console.log('inside add post');
+    e.preventDefault();;
 
     fetch("/new_post", {
         method: "POST",
@@ -11,11 +9,8 @@ function addPost(e) {
         })
     })
         .then(response => {
-            console.log('after request');
+            location.reload();
             return response.json();
-        })
-        .then(result => {
-            loadAllPosts();
         })
         .catch(error => error.message ? error.message : error)
 }

@@ -18,7 +18,7 @@
     {% endif %}
 
     <h2 class="m-3">All posts</h2>
-    {% for post in all_posts %}
+    {% for post in page %}
     <div class="m-3 border p-1">
         <h3>{{ post.title }}</h3>
         <p>Written by: <a href="/profile/{{ post.author.id }}">{{ post.author }}</a></p>
@@ -27,6 +27,22 @@
         <p>Created at: {{ post.created }}</p>
     </div>   
     {% endfor %}
+
+    <div class="pagination m-3">
+        <span>
+            {% if page.has_previous %}
+            <a class="page-link d-inline" href="?page=1">first</a>
+            <a class="page-link d-inline" href="?page={{ page.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="page-item d-inline" class="current-page">{{ page.number }} of {{ page.paginator.num_pages }}</span>
+
+            {% if page.has_next %}
+            <a class="page-link d-inline" href="?page={{ page.next_page_number }}">next</a>
+            <a class="page-link d-inline" href="?page={{ page.paginator.num_pages }}">last</a>
+            {% endif %}
+        </span>
+    </div>
 {% endblock %}
 
 {% block script %}

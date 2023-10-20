@@ -6,6 +6,7 @@ from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
+from django.core.paginator import Paginator
 
 from .models import User, Post, Comment
 
@@ -13,9 +14,12 @@ from .models import User, Post, Comment
 def index(request):
 
     new_post = True if request.user.is_authenticated else False
-    all_posts = Post.objects.all()
+    all_posts = Post.objects.all().order_by("-created")
+    paginator = Paginator(all_posts, 10)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
     
-    return render(request, "network/index.html", { "new_post": new_post, "all_posts": all_posts })
+    return render(request, "network/index.html", { "new_post": new_post, "page": page })
 
 
 def login_view(request):
@@ -132,5 +136,8 @@ def unfollow(request, target_user_id):
 def following(request):
     users_following = request.user.following.all()
     posts_following = Post.objects.filter(author__in=users_following).order_by("-created")
+    paginator = Paginator(posts_following, 10)
+    page_number = request.GET.get('page')
+    page = paginator.get_page(page_number)
 
-    return render(request, "./network/following.html", {"posts_following": posts_following})
+    return render(request, "./network/following.html", {"page": page})
