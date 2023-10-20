@@ -7,10 +7,14 @@ class User(AbstractUser):
 
 class Post(models.Model):
     title = models.CharField(max_length=255)
-    author = models.ForeignKey("User", on_delete=models.PROTECT)
+    author = models.ForeignKey("User", on_delete=models.CASCADE)
     body = models.TextField(blank=True)
-    likes = models.IntegerField(default=0)
+    likes = models.ManytoManyField("User", on_delete=models.CASCADE, related_name="liked", null=True)
     created = models.DateTimeField(auto_now_add=True)
+
+    @property
+    def likes_count(self):
+        return self.likes.count() if self.likes else 0
 
     def serialize(self):
         return {
@@ -19,12 +23,5 @@ class Post(models.Model):
             "title": self.title,
             "body": self.body,
             "created": self.created.strftime("%b %d %Y, %I:%M %p"),
-            "likes": self.likes,
-            "comments": None
+            "likes": self.likes.count() if self.likes != None else 0,
         }
-
-class Comment(models.Model):
-    author = models.ForeignKey("User", on_delete=models.CASCADE, related_name="comments")
-    post = models.ForeignKey("Post", on_delete=models.CASCADE, related_name="comments")
-    body = models.TextField(blank=True)
-    created = models.DateTimeField(auto_now_add=True)
