@@ -155,7 +155,6 @@ def update_post(request, post_id):
     post = post.first()
     data = json.loads(request.body)
     post.body = data["body"]
-    print(post.body)
     post.save()
 
     return JsonResponse({"message": "Post updated successfully"}, status=200)
