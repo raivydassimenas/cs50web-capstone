@@ -160,25 +160,25 @@ def update_post(request, post_id):
     return JsonResponse({"message": "Post updated successfully"}, status=200)
 
     
-    @login_required
-    @csrf_exempt
-    @require_http_methods(["PUT"])
-    def like(request, post_id):
-        posts = Post.objects.filter(pk=post_id)
+@login_required
+@csrf_exempt
+@require_http_methods(["PUT"])
+def like(request, post_id):
+    posts = Post.objects.filter(pk=post_id)
 
-        if not posts.exist():
-            return JsonResponse({"error": "Post does not exist"}, status=404)
+    if not posts.exist():
+        return JsonResponse({"error": "Post does not exist"}, status=404)
         
-        post = posts.first()
+    post = posts.first()
 
-        if post.author == request.user:
-            return JsonResponse({"error": "You cannot like your own post"}, status=403)
+    if post.author == request.user:
+        return JsonResponse({"error": "You cannot like your own post"}, status=403)
         
-        user = request.user
-        likes = post.likes.all()
-        if post.likes.filter(user__in=likes):
-            return JsonResponse({"error": "You already liked this post"}, status=403)
+    user = request.user
+    likes = post.likes.all()
+    if post.likes.filter(user__in=likes):
+        return JsonResponse({"error": "You already liked this post"}, status=403)
 
-        post.likes.add(request.user)
-        post.save()
-        return JsonResponse({"message": "Added a like successfully"}, status=200)
+    post.likes.add(request.user)
+    post.save()
+    return JsonResponse({"message": "Added a like successfully"}, status=200)
