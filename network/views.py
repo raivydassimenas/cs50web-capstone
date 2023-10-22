@@ -14,11 +14,15 @@ from .models import User, Post
 
 def index(request):
 
-    new_post = True if request.user.is_authenticated else False
+    new_post = request.user.is_authenticated
     all_posts = Post.objects.all().order_by("-created")
     paginator = Paginator(all_posts, 10)
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
+
+    for post in all_posts:
+        post.can_like = request.user != post.author and not post.likes.get(request.user)
+        post.can_unlike = True if post.likes.get(request.user) else False
     
     return render(request, "network/index.html", { "new_post": new_post, "page": page })
 
@@ -162,7 +166,6 @@ def update_post(request, post_id):
     
 @login_required
 @csrf_exempt
-@require_http_methods(["PUT"])
 def like(request, post_id):
     posts = Post.objects.filter(pk=post_id)
 
@@ -173,12 +176,31 @@ def like(request, post_id):
 
     if post.author == request.user:
         return JsonResponse({"error": "You cannot like your own post"}, status=403)
-        
-    user = request.user
-    likes = post.likes.all()
-    if post.likes.filter(user__in=likes):
+
+    if post.likes.get(request.user):
         return JsonResponse({"error": "You already liked this post"}, status=403)
 
     post.likes.add(request.user)
     post.save()
-    return JsonResponse({"message": "Added a like successfully"}, status=200)
+    return JsonResponse({"message": "Liked successfully"}, status=200)
+
+
+@login_required
+@csrf_exempt
+def unlike(request, post_id):
+    posts = Post.objects.filter(pk=post_id)
+
+    if not posts.exist():
+        return JsonResponse({"error": "Post does not exist"}, status=404)
+
+    post = posts.first()
+
+    if post.author == request.user:
+        return JsonResponse({"error": "You cannot unlike your own post"}, status=403)
+
+    if not post.likes.get(request.user):
+        return JsonResponse({"error": "You have not liked this post"}, status=403)
+
+    post.likes.remove(request.user)
+    post.save()
+    return JsonResponse({"message": "Unliked successfully"}, status=200)

@@ -24,6 +24,11 @@
         <p>Written by: <a href="/profile/{{ post.author.id }}">{{ post.author }}</a></p>
         <p class="post-body">{{ post.body }}</p>
         <p>Likes: {{ post.likes_count }}</p>
+        {% if post.can_like %}
+        <a href="/like/{{ post.id }}">Like</a>
+        {% elif post.can_unlike %}
+        <a href="/unlike/{{ post.id }}">Unlike</a>
+        {% endif %}
         <p>Created at: {{ post.created }}</p>
         {% if post.author == request.user %}
         <button id="{{ post.id }}" class="btn btn-primary edit-post">Edit</button>
