@@ -16,14 +16,14 @@ def index(request):
 
     new_post = request.user.is_authenticated
     all_posts = Post.objects.all().order_by("-created")
+    for post in all_posts:
+        post.can_like = request.user != post.author and request.user not in post.likes.all()
+        post.can_unlike = request.user in post.likes.all()
+
     paginator = Paginator(all_posts, 10)
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
 
-    for post in all_posts:
-        post.can_like = request.user != post.author and not post.likes.get(request.user)
-        post.can_unlike = True if post.likes.get(request.user) else False
-    
     return render(request, "network/index.html", { "new_post": new_post, "page": page })
 
 
@@ -169,7 +169,7 @@ def update_post(request, post_id):
 def like(request, post_id):
     posts = Post.objects.filter(pk=post_id)
 
-    if not posts.exist():
+    if not posts.exists():
         return JsonResponse({"error": "Post does not exist"}, status=404)
         
     post = posts.first()
@@ -177,12 +177,12 @@ def like(request, post_id):
     if post.author == request.user:
         return JsonResponse({"error": "You cannot like your own post"}, status=403)
 
-    if post.likes.get(request.user):
+    if request.user in post.likes.all():
         return JsonResponse({"error": "You already liked this post"}, status=403)
 
     post.likes.add(request.user)
     post.save()
-    return JsonResponse({"message": "Liked successfully"}, status=200)
+    return HttpResponseRedirect(reverse("index"))
 
 
 @login_required
@@ -190,7 +190,7 @@ def like(request, post_id):
 def unlike(request, post_id):
     posts = Post.objects.filter(pk=post_id)
 
-    if not posts.exist():
+    if not posts.exists():
         return JsonResponse({"error": "Post does not exist"}, status=404)
 
     post = posts.first()
@@ -198,9 +198,9 @@ def unlike(request, post_id):
     if post.author == request.user:
         return JsonResponse({"error": "You cannot unlike your own post"}, status=403)
 
-    if not post.likes.get(request.user):
+    if request.user not in post.likes.all():
         return JsonResponse({"error": "You have not liked this post"}, status=403)
 
     post.likes.remove(request.user)
     post.save()
-    return JsonResponse({"message": "Unliked successfully"}, status=200)
+    return HttpResponseRedirect(reverse("index"))
