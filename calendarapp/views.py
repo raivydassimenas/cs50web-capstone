@@ -4,4 +4,4 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    return render(request, './calendarapp/layout.html')
+    return render(request, './calendarapp/index.html', { "user": "default"})

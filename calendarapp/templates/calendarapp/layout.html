@@ -6,10 +6,30 @@
     <meta charset="UTF-8">
     <title>Calendar App</title>
     <link rel="stylesheet" href="{% static 'calendarapp/output.css' %}">
+{% block styles %}
+{% endblock %}
     {% block script %}
     {% endblock %}
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+<nav class="bg-slate-800 p-4">
+    <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="text-white font-bold text-lg">My Logo</div>
+            <div class="flex space-x-4">
+                {% if user.is_authenticated %}
+                    <a href="#" class="text-white">Calendar</a>
+                    <a href="#" class="text-white">My Events</a>
+                    <a href="#" class="text-white">Logout {{ email }}</a>
+                {% else %}
+                    <a href="#" class="text-white">Login</a>
+                    <a href="#" class="text-white">Register</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</nav>
+{% block body %}
+{% endblock %}
 </body>
 </html>
