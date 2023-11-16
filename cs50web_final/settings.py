@@ -122,9 +122,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+<<<<<<< HEAD
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'calendarapp/static')]
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+=======
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+>>>>>>> d136360 (Add Tailwind CSS support)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -132,9 +137,12 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'calendarapp/static')]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'calendarapp.User'
+<<<<<<< HEAD
 
 TAILWIND_APP_NAME = 'theme'
 
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+=======
+>>>>>>> d136360 (Add Tailwind CSS support)

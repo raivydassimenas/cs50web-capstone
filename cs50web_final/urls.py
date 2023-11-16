@@ -19,6 +19,10 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('', include('calendarapp.urls')),
     path("__reload__/", include("django_browser_reload.urls"))
+=======
+    path('', include('calendarapp.urls'))
+>>>>>>> d136360 (Add Tailwind CSS support)
 ]
