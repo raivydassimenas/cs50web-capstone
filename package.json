@@ -1,0 +1,15 @@
+{
+  "name": "cs50web_final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./calendarapp/static/calendarapp/styles.css -o ./calendarapp/static/calendarapp/output.css --watch"
+  },
+  "author": "Raivydas Šimėnas",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
