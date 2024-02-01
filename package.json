@@ -1,9 +1,0 @@
-{
-  "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "tailwindcss": "^3.3.5"
-  },
-  "scripts": {
-    "dev": "npx tailwindcss -i ./calendarapp/static/calendarapp/styles.css -o ./calendarapp/static/calendarapp/output.css"
-  }
-}
