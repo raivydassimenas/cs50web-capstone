@@ -20,49 +20,50 @@
 
 <body class="flex flex-col min-h-screen">
     <div class="flex-1">
-    <nav class="bg-slate-800 p-2">
-        <div class="container mx-auto">`
-            <div class="flex items-center justify-between">
-                <img src="{% static 'images/Vector calendar icon.png' %}" alt="Logo" class="h-10 w-10">
-                <div class="hidden md:block flex space-x-2 text-xl">
-                    {% if user.is_authenticated %}
-                    <a href="{% url 'index' %}" class="text-white">Calendar</a>
-                    <a href="{% url 'insert_event' %}" class="text-white">Add event</a>
-                    <a href="{% url 'event_list' %}" class="text-white">My Events</a>
-                    <a href="{% url 'logout' %}" class="text-white">Logout {{ user.email }}</a>
-                    {% else %}
-                    <a href="{% url 'login' %}" class="text-white">Login</a>
-                    <a href="{% url 'register' %}" class="text-white">Register</a>
-                    {% endif %}
-                </div>
+        <nav class="bg-slate-800 p-2">
+            <div class="container mx-auto">`
+                <div class="flex items-center justify-between">
+                    <img src="{% static 'images/Vector calendar icon.png' %}" alt="Logo" class="h-10 w-10">
+                    <div class="hidden md:block flex space-x-2 text-xl">
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'index' %}" class="text-white">Calendar</a>
+                        <a href="{% url 'insert_event' %}" class="text-white">Add event</a>
+                        <a href="{% url 'event_list' %}" class="text-white">My Events</a>
+                        <a href="{% url 'logout' %}" class="text-white">Logout {{ user.email }}</a>
+                        {% else %}
+                        <a href="{% url 'login' %}" class="text-white">Login</a>
+                        <a href="{% url 'register' %}" class="text-white">Register</a>
+                        {% endif %}
+                    </div>
 
-                <div class="flex flex-col items-end md:hidden">
-                    <button id="hamburger-button" class="md:hidden text-gray-400 hover:text-white focus:outline-none">
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                    <div id="hamburger-menu" class="hidden md:hidden bg-gray-800 px-4 py-3">
-                        <ul class="space-y-2">
-                            {% if user.is_authenticated %}
-                            <li><a href="{% url 'index' %}" class="text-white">Calendar</a></li>
-                            <li><a href="{% url 'insert_event' %}" class="text-white">Add event</a></li>
-                            <li><a href="{% url 'event_list' %}" class="text-white">My Events</a></li>
-                            <li><a href="{% url 'logout' %}" class="text-white">Logout {{ user.email }}</a></li>
-                            {% else %}
-                            <li><a href="{% url 'login' %}" class="text-white">Login</a></li>
-                            <li><a href="{% url 'register' %}" class="text-white">Register</a></li>
-                            {% endif %}
-                        </ul>
+                    <div class="flex flex-col items-end md:hidden">
+                        <button id="hamburger-button"
+                            class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                        <div id="hamburger-menu" class="hidden md:hidden bg-gray-800 px-4 py-3">
+                            <ul class="space-y-2">
+                                {% if user.is_authenticated %}
+                                <li><a href="{% url 'index' %}" class="text-white">Calendar</a></li>
+                                <li><a href="{% url 'insert_event' %}" class="text-white">Add event</a></li>
+                                <li><a href="{% url 'event_list' %}" class="text-white">My Events</a></li>
+                                <li><a href="{% url 'logout' %}" class="text-white">Logout {{ user.email }}</a></li>
+                                {% else %}
+                                <li><a href="{% url 'login' %}" class="text-white">Login</a></li>
+                                <li><a href="{% url 'register' %}" class="text-white">Register</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    {% block body %}
-    {% endblock %}
+        </nav>
+        {% block body %}
+        {% endblock %}
     </div>
     <footer class="mt-auto">
         <div class="text-right m-2">
@@ -72,8 +73,4 @@
         </div>
     </footer>
 </body>
-<<<<<<< HEAD
-
-=======
->>>>>>> ce3094f (Add index.html and navbar)
 </html>
