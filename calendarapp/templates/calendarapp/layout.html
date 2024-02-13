@@ -1,13 +1,13 @@
-{% load static %}
+{% load static tailwind_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Calendar App</title>
-    <link rel="stylesheet" href="{% static 'calendarapp/output.css' %}">
     {% block script %}
     {% endblock %}
+    {% tailwind_css %}
 </head>
 <body>
 <nav class="bg-slate-800 p-4">
