@@ -1,21 +1,20 @@
 {% extends "calendarapp/layout.html" %}
 
+{% load static %}
+
+{% block script %}
+<script defer src="{% static 'js/index.js' %}"></script>
+{% endblock %}
+
 {% block body %}
 <div>
         <div>
             <h2>January 2024</h2>
         </div>
-        <div class="m-10 grid grid-cols-7 w-1/2 mx-auto">
-            <div>Sun</div>
-            <div>Mon</div>
-            <div>Tue</div>
-            <div>Wed</div>
-            <div>Thu</div>
-            <div>Fri</div>
-            <div>Sat</div>
+        <div class="grid grid-cols-7 w-1/2 mx-auto" id="days-container">
         </div>
 {#        <div>#}
 {#            <!-- JavaScript will dynamically populate dates here -->#}
 {#        </div>#}
-    </div>
+</div>
 {% endblock %}
