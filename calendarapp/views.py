@@ -72,4 +72,4 @@ def insert_event(request):
 
         return HttpResponseRedirect(reverse('index'))
     else:
-        return render(request, './calendarapp/event.html', {'date': date})
+        return render(request, './calendarapp/event.html')
