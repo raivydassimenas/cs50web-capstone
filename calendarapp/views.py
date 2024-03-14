@@ -12,7 +12,7 @@ from .models import User, Event
 
 
 def index(request):
-    return render(request, './calendarapp/index.html', { "user": "default"})
+    return render(request, './calendarapp/index.html', {"user": "default"})
 
 
 def register(request):
@@ -25,7 +25,8 @@ def register(request):
             return render(request, './calendarapp/register.html', {"message": "Passwords do not match"})
 
         try:
-            user = User.objects.create_user(email, password, first_name=request.POST['firstname'], last_name=request.POST['lastname'])
+            user = User.objects.create_user(email, password, first_name=request.POST['firstname'],
+                                            last_name=request.POST['lastname'])
         except IntegrityError:
             return render(request, './calendarapp/register.html', {"message": "Error saving user"})
 
@@ -53,3 +54,22 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect(reverse('login'))
+
+
+@login_required
+def insert_event(request):
+    if request.method == 'POST':
+        description = request.POST['description']
+        place = request.POST['place']
+        date = request.POST['date']
+        title = request.POST['title']
+        user = request.user
+
+        try:
+            event = Event.objects.create(user=user, description=description, place=place, date=date, title=title)
+        except IntegrityError:
+            return render(request, './calendarapp/event.html', {"message": "Error saving event"})
+
+        return HttpResponseRedirect(reverse('index'))
+    else:
+        return render(request, './calendarapp/event.html', {'date': date})
