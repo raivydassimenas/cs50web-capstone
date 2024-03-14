@@ -966,6 +966,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .m-2 {
   margin: 0.5rem;
 }
@@ -1015,6 +1016,8 @@ select {
 =======
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 1122e6b (Add event adding functionality)
 .m-2 {
   margin: 0.5rem;
 }
@@ -1028,6 +1031,8 @@ select {
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 }
 
+=======
+>>>>>>> 327da3a (Add event adding functionality)
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1068,6 +1073,9 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1122e6b (Add event adding functionality)
 .mt-auto {
   margin-top: auto;
 }
@@ -1095,7 +1103,20 @@ select {
 >>>>>>> 87925c6 (Minor changes)
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
+<<<<<<< HEAD
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .block {
   display: block;
 }
@@ -1220,6 +1241,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
@@ -1234,14 +1256,21 @@ select {
 >>>>>>> e7bd562 (Add responsiveness)
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .max-w-md {
   max-width: 28rem;
 }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+>>>>>>> 1122e6b (Add event adding functionality)
 .max-w-sm {
   max-width: 24rem;
 }
@@ -1260,9 +1289,13 @@ select {
 }
 
 =======
+<<<<<<< HEAD
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .border-collapse {
   border-collapse: collapse;
 }
@@ -1274,16 +1307,22 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1294,6 +1333,12 @@ select {
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+>>>>>>> 7d25f10 (Set up django-tailwind package)
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
@@ -1452,8 +1497,11 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 1122e6b (Add event adding functionality)
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1467,15 +1515,21 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .border-red-500 {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1494,6 +1548,12 @@ select {
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+>>>>>>> 7d25f10 (Set up django-tailwind package)
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -1601,10 +1661,13 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 87925c6 (Minor changes)
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 1122e6b (Add event adding functionality)
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1625,12 +1688,17 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
 >>>>>>> 87925c6 (Minor changes)
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1638,13 +1706,20 @@ select {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1122e6b (Add event adding functionality)
 =======
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
+<<<<<<< HEAD
 >>>>>>> d42b9c8 (Add event adding functionality)
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1652,8 +1727,11 @@ select {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+>>>>>>> 1122e6b (Add event adding functionality)
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1678,7 +1756,11 @@ select {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+<<<<<<< HEAD
 >>>>>>> d42b9c8 (Add event adding functionality)
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 }
 
 .pt-6 {
@@ -1688,8 +1770,11 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+>>>>>>> 1122e6b (Add event adding functionality)
 .text-center {
   text-align: center;
 }
@@ -1721,7 +1806,16 @@ select {
 =======
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
+<<<<<<< HEAD
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -1819,14 +1913,20 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .leading-tight {
   line-height: 1.25;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1837,6 +1937,12 @@ select {
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+>>>>>>> 7d25f10 (Set up django-tailwind package)
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .tracking-normal {
   letter-spacing: 0em;
 }
@@ -1919,8 +2025,11 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 1122e6b (Add event adding functionality)
 .opacity-90 {
   opacity: 0.9;
 }
@@ -1968,7 +2077,17 @@ select {
 /* Your custom styles go here */
 ========
 >>>>>>> 7d25f10 (Set up django-tailwind package)
+<<<<<<< HEAD
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1996,6 +2115,7 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -2004,6 +2124,14 @@ select {
 
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
+=======
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+>>>>>>> 327da3a (Add event adding functionality)
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -2020,10 +2148,15 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
@@ -2031,8 +2164,11 @@ select {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+>>>>>>> 1122e6b (Add event adding functionality)
 .hover\:bg-red-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
@@ -2062,7 +2198,12 @@ select {
 >>>>>>> 966a96f (Add event functionality)
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
+<<<<<<< HEAD
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+=======
+>>>>>>> 327da3a (Add event adding functionality)
+>>>>>>> 1122e6b (Add event adding functionality)
 .focus\:border-blue-300:focus {
   --tw-border-opacity: 1;
   border-color: rgb(147 197 253 / var(--tw-border-opacity));
