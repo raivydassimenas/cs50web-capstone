@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
 from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from datetime import datetime
 
 from .models import User, Event
 
@@ -57,11 +58,11 @@ def logout_view(request):
 
 
 @login_required
-def insert_event(request):
+def insert_event(request, date):
     if request.method == 'POST':
         description = request.POST['description']
         place = request.POST['place']
-        date = request.POST['date']
+        date = datetime.strptime(date, "%Y-%m-%d %H:%M:%S")
         title = request.POST['title']
         user = request.user
 
