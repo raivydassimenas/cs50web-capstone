@@ -21,12 +21,11 @@ weekdays.forEach(day => {
 for (let day = 1; day <= numDays; day++) {
     const dayElement = document.createElement('a');
     dayElement.innerText = day;
-    const date = new Date(`${currentDate.getFullYear()}-${currentDate.getMonth}-${day}`);
+    let date = new Date(`${currentDate.getFullYear()}-${currentDate.getMonth()}-${day}`);
     const dateString = date.toISOString();
     const encodedDateString = encodeURIComponent(dateString);
-    dayElement.href = `/insert_event/?date=${encodedDateString}`;
+    dayElement.href = `/insert_event/${encodedDateString}`;
     if (day === 1) {
-        console.log(firstDayOfMonth);
         dayElement.classList.add(`col-start-${firstDayOfMonth + 1}`);
     }
     daysContainer.appendChild(dayElement);
