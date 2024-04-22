@@ -38,7 +38,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 class Event(models.Model):
     user = models.ForeignKey("User", on_delete=models.CASCADE)
     title = models.CharField(max_length=30)
-    time = models.DateTimeField()
+    date = models.DateTimeField()
     place = models.TextField()
     description = models.TextField()
     created = models.DateTimeField(auto_now_add=True)

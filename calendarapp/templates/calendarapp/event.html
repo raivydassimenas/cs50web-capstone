@@ -8,10 +8,10 @@
 
 {% block body %}
     <div class="max-w-md mx-auto">
-        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST">
             {% csrf_token %}
             <div class="mb-4">
-                <div class="block text-gray-700 text-sm font-bold mb-2">
+                <div id="date" data-parameter="{{ date }}" class="block text-gray-700 text-sm font-bold mb-2">
                     Date: {{ date }}
                 </div>
             </div>

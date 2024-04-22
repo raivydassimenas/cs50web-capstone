@@ -1,8 +1,19 @@
-document.querySelector("#submitButton").addEventListener("click", () => {
-    const description = document.querySelector("#description");
-    const place = document.querySelector("#place");
-    const date = "{{ date }}"
-    const title = document.querySelector("#title")
+function getCookie(name) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+
+const csrftoken = getCookie('csrftoken');
+
+document.querySelector("#submitButton").addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const description = document.querySelector("#description").value;
+    const place = document.querySelector("#place").value;
+    const date = document.querySelector("#date").dataset.parameter;
+    const title = document.querySelector("#title").value;
 
     const formData = {
         description,
@@ -11,10 +22,13 @@ document.querySelector("#submitButton").addEventListener("click", () => {
         title
     };
 
-    fetch("/insert_event", {
+    const encodedDateString = encodeURIComponent(date);
+
+    fetch(`/insert_event/${encodedDateString}`, {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "X-CSRFToken": csrftoken,
         },
         body: JSON.stringify(formData)
     })
