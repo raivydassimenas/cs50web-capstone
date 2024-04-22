@@ -2,3 +2,7 @@
 /node_modules
 /calendarapp/migrations
 /venv
+/calendarapp/__pycache__
+/cs50web_final/__pycache__
+/theme/__pycache__
+/.idea
