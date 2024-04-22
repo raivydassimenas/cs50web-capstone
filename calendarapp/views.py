@@ -76,7 +76,6 @@ def logout_view(request):
     logout(request)
     return HttpResponseRedirect(reverse("login"))
 
-
 @login_required
 def insert_event(request):
     if request.method == "POST":
@@ -86,6 +85,8 @@ def insert_event(request):
         datet = datetime.strptime(data.get("datet"), "%Y-%m-%d %H:%M")
         title = data.get("title")
         user = request.user
+
+        print('data obtained')
 
         try:
             event = Event.objects.create(

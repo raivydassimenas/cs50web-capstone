@@ -1,23 +1,15 @@
 from django.db import models
-<<<<<<< HEAD
 from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin,
 )
-=======
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
->>>>>>> d136360 (Add Tailwind CSS support)
 
 
 class CustomUserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
         if not email:
-<<<<<<< HEAD
             raise ValueError("The Email field must be set")
-=======
-            raise ValueError('The Email field must be set')
->>>>>>> d136360 (Add Tailwind CSS support)
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
@@ -25,13 +17,8 @@ class CustomUserManager(BaseUserManager):
         return user
 
     def create_superuser(self, email, password=None, **extra_fields):
-<<<<<<< HEAD
         extra_fields.setdefault("is_staff", True)
         extra_fields.setdefault("is_superuser", True)
-=======
-        extra_fields.setdefault('is_staff', True)
-        extra_fields.setdefault('is_superuser', True)
->>>>>>> d136360 (Add Tailwind CSS support)
 
         return self.create_user(email, password, **extra_fields)
 
@@ -45,24 +32,17 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     objects = CustomUserManager()
 
-<<<<<<< HEAD
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["first_name", "last_name"]
 
     def __str__(self):
         return str(self.email)
-=======
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['first_name', 'last_name']
-
-    def __str__(self):
-        return self.email
->>>>>>> d136360 (Add Tailwind CSS support)
 
 
 class Event(models.Model):
     user = models.ForeignKey("User", on_delete=models.CASCADE)
     title = models.CharField(max_length=30)
+<<<<<<< HEAD
 <<<<<<< HEAD
     datet = models.DateTimeField()
     date = models.DateField()
@@ -75,6 +55,9 @@ class Event(models.Model):
         super().save(*args, **kwargs)
 =======
     time = models.DateTimeField()
+=======
+    date = models.DateTimeField()
+>>>>>>> 11277d1 (Add event insertion functionality)
     place = models.TextField()
     description = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
