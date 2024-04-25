@@ -9,7 +9,7 @@
 /* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
 ========
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 >>>>>>>> 7aa2cc8 (Set up django-tailwind package):theme/static/css/dist/styles.css
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
@@ -247,10 +247,15 @@ textarea {
   line-height: inherit;
   /* 1 */
 <<<<<<< HEAD
+<<<<<<< HEAD
   letter-spacing: inherit;
   /* 1 */
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+  letter-spacing: inherit;
+  /* 1 */
+>>>>>>> 966a96f (Add event functionality)
   color: inherit;
   /* 1 */
   margin: 0;
@@ -275,6 +280,7 @@ select {
 
 button,
 <<<<<<< HEAD
+<<<<<<< HEAD
 input:where([type='button']),
 input:where([type='reset']),
 input:where([type='submit']) {
@@ -283,6 +289,11 @@ input:where([type='submit']) {
 [type='reset'],
 [type='submit'] {
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+>>>>>>> 966a96f (Add event functionality)
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -734,12 +745,18 @@ select {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
   --tw-contain-size:  ;
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> 966a96f (Add event functionality)
 }
 
 ::backdrop {
@@ -791,6 +808,9 @@ select {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
   --tw-contain-size:  ;
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
@@ -915,13 +935,19 @@ select {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 87925c6 (Minor changes)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1057,10 +1083,14 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 .max-w-sm {
   max-width: 24rem;
 }
 
+<<<<<<< HEAD
 .flex-1 {
   flex: 1 1 0%;
 =======
@@ -1071,6 +1101,8 @@ select {
 
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .border-collapse {
   border-collapse: collapse;
 }
@@ -1121,12 +1153,18 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 .justify-end {
   justify-content: flex-end;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .justify-center {
   justify-content: center;
 }
@@ -1158,6 +1196,10 @@ select {
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1172,28 +1214,42 @@ select {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+=======
+>>>>>>> 966a96f (Add event functionality)
 .border-red-400 {
   --tw-border-opacity: 1;
   border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .border-red-500 {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
+=======
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+>>>>>>> 966a96f (Add event functionality)
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -1205,16 +1261,20 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> 966a96f (Add event functionality)
 .bg-red-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
@@ -1222,6 +1282,8 @@ select {
 
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -1235,6 +1297,11 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -1265,15 +1332,21 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
 >>>>>>> 87925c6 (Minor changes)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1294,6 +1367,9 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1302,11 +1378,14 @@ select {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+<<<<<<< HEAD
 =======
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 >>>>>>> 87925c6 (Minor changes)
+=======
+>>>>>>> 966a96f (Add event functionality)
 }
 
 .pb-8 {
@@ -1324,10 +1403,14 @@ select {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 .text-center {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .text-right {
   text-align: right;
 }
@@ -1342,6 +1425,8 @@ select {
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
 >>>>>>> 87925c6 (Minor changes)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -1352,13 +1437,19 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1454,15 +1545,21 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 .text-red-700 {
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 =======
 >>>>>>> 87925c6 (Minor changes)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .text-slate-600 {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
@@ -1476,12 +1573,20 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .opacity-90 {
   opacity: 0.9;
 }
 
 =======
 >>>>>>> 87925c6 (Minor changes)
+=======
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+>>>>>>> 966a96f (Add event functionality)
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1495,6 +1600,7 @@ select {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 =======
@@ -1506,6 +1612,8 @@ select {
 }
 
 >>>>>>> d42b9c8 (Add event adding functionality)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1532,6 +1640,12 @@ select {
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 }
 
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -1555,11 +1669,15 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 .hover\:bg-red-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -1578,19 +1696,27 @@ select {
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .focus\:border-blue-300:focus {
   --tw-border-opacity: 1;
   border-color: rgb(147 197 253 / var(--tw-border-opacity));
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 .focus\:border-indigo-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> 966a96f (Add event functionality)
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1602,6 +1728,9 @@ select {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 966a96f (Add event functionality)
 
 .focus\:ring-indigo-500:focus {
   --tw-ring-opacity: 1;
@@ -1618,6 +1747,7 @@ select {
     line-height: 1.25rem;
   }
 }
+<<<<<<< HEAD
 
 @media (min-width: 768px) {
   .md\:block {
@@ -1631,3 +1761,5 @@ select {
 =======
 >>>>>>>> 7aa2cc8 (Set up django-tailwind package):theme/static/css/dist/styles.css
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> 966a96f (Add event functionality)
