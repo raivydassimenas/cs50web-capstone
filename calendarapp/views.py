@@ -15,7 +15,9 @@ from .models import User, Event
 
 
 def index(request):
-    return render(request, './calendarapp/index.html', {"user": "default"})
+    if request.user.is_authenticated:
+        return render(request, './calendarapp/index.html', {"user": request.user})
+    return HttpResponseRedirect(reverse('login'))
 
 
 def register(request):
