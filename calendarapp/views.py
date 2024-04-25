@@ -5,7 +5,6 @@ from django.db import IntegrityError
 from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from datetime import datetime
-import urllib.parse
 import json
 
 from .models import User, Event
@@ -60,18 +59,17 @@ def logout_view(request):
     logout(request)
     return HttpResponseRedirect(reverse('login'))
 
+
 @login_required
-def insert_event(request, date):
+def insert_event(request):
     if request.method == 'POST':
-        print(date)
         data = json.loads(request.body)
         description = data.get('description')
         place = data.get('place')
-        date = datetime.strptime(data.get('date'), '%Y-%m-%d %H:%M:%S')
+        date = datetime.strptime(data.get('datetime'), '%Y-%m-%d %H:%M')
         title = data.get('title')
         user = request.user
 
-        print('data obtained')
 
         try:
             event = Event.objects.create(user=user, description=description, place=place, date=date, title=title)
@@ -80,9 +78,17 @@ def insert_event(request, date):
 
         return HttpResponseRedirect(reverse('index'))
     else:
-        decoded_datetime_string = urllib.parse.unquote(date)
-        datetime_object = datetime.strptime(decoded_datetime_string, '%Y-%m-%dT%H:%M:%S.%fZ')
-        date = datetime_object.strftime('%Y-%m-%d %H:%M:%S')
+        return render(request, './calendarapp/event.html')
 
-        return render(request, './calendarapp/event.html', {"date": date})
 
+@login_required
+def event_list(request):
+    events = Event.objects.all().order_by('-date')
+    return render(request, './calendarapp/event_list.html', {"events": events})
+
+
+@login_required
+def event_delete(request, event_id):
+    event = Event.objects.get(pk=event_id)
+    event.delete()
+    return HttpResponseRedirect(reverse('event_list'))
