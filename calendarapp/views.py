@@ -87,7 +87,6 @@ def insert_event(request):
         title = data.get("title")
         user = request.user
 
-
         try:
             event = Event.objects.create(
                 user=user,
