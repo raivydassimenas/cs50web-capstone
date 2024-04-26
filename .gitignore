@@ -13,6 +13,7 @@ db.sqlite3
 /node_modules
 /calendarapp/migrations
 <<<<<<< HEAD
+<<<<<<< HEAD
 /venv
 <<<<<<< HEAD
 >>>>>>> d136360 (Add Tailwind CSS support)
@@ -20,6 +21,9 @@ db.sqlite3
 =======
 /.venv
 >>>>>>> 427e840 (Add .venv to .gitignore)
+=======
+/venv
+>>>>>>> e0f9858 (Change .venv to venv)
 /calendarapp/__pycache__
 /cs50web_final/__pycache__
 /theme/__pycache__
