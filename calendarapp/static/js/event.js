@@ -38,10 +38,13 @@ document.querySelector("#submitButton").addEventListener("click", (e) => {
     })
         .then(response => {
             if (response.ok) {
-                console.log("Event inserted successfully");
+                window.location.href = response.url;
             } else {
-                console.log("Error inserting event");
+                return response.json();
             }
+        })
+        .then(data => {
+            console.log(data);
         })
         .catch(error => {
             console.error("Error:", error);
