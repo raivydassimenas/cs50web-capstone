@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+calendarapp/migrations
+calendarapp/__pycache__
+cs50web_final/__pycache__
+theme/__pycache__
+node_modules
+venv
+db.sqlite3
+=======
+/db.sqlite3
+/node_modules
+/calendarapp/migrations
+<<<<<<< HEAD
+/venv
+<<<<<<< HEAD
+>>>>>>> d136360 (Add Tailwind CSS support)
+=======
+=======
+/.venv
+>>>>>>> 427e840 (Add .venv to .gitignore)
+/calendarapp/__pycache__
+/cs50web_final/__pycache__
+/theme/__pycache__
+/.idea
+>>>>>>> 507b8cf (Update .gitignore)
+>>>>>>> a13d4dc (Add .venv to .gitignore)
