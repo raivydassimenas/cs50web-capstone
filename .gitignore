@@ -1,7 +1,7 @@
 /db.sqlite3
 /node_modules
 /calendarapp/migrations
-/.venv
+/venv
 /calendarapp/__pycache__
 /cs50web_final/__pycache__
 /theme/__pycache__
