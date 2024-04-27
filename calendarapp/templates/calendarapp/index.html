@@ -3,7 +3,9 @@
 {% load static %}
 
 {% block script %}
+<script defer src='https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js'></script>
 <script defer src="{% static 'js/index.js' %}"></script>
+{{ event_list|json_script:"event_list_data" }}
 {% endblock %}
 
 {% block body %}

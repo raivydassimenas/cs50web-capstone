@@ -6,6 +6,7 @@ from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from datetime import datetime
 import json
+import urllib.parse
 
 from .models import User, Event
 
@@ -15,7 +16,20 @@ from .models import User, Event
 
 def index(request):
     if request.user.is_authenticated:
-        return render(request, "./calendarapp/index.html", {"user": request.user})
+        event_list = [
+            str(date)
+            for date in list(
+                Event.objects.filter(user=request.user)
+                .values_list("date", flat=True)
+                .distinct()
+            )
+        ]
+
+        return render(
+            request,
+            "./calendarapp/index.html",
+            {"user": request.user, "event_list": event_list},
+        )
     return HttpResponseRedirect(reverse("login"))
 
 
@@ -80,13 +94,17 @@ def insert_event(request):
         data = json.loads(request.body)
         description = data.get("description")
         place = data.get("place")
-        date = datetime.strptime(data.get("datetime"), "%Y-%m-%d %H:%M")
+        datet = datetime.strptime(data.get("datet"), "%Y-%m-%d %H:%M")
         title = data.get("title")
         user = request.user
 
         try:
             event = Event.objects.create(
-                user=user, description=description, place=place, date=date, title=title
+                user=user,
+                description=description,
+                place=place,
+                datet=datet,
+                title=title,
             )
         except IntegrityError:
             return render(
@@ -102,6 +120,16 @@ def insert_event(request):
 def event_list(request):
     events = Event.objects.filter(user=request.user).order_by("-date")
     return render(request, "./calendarapp/event_list.html", {"events": events})
+
+
+@login_required
+def day_list(request, date):
+    date = urllib.parse.unquote(date)
+    date = datetime.strptime(date, "%a, %d %b %Y %H:%M:%S GMT").date()
+    events = Event.objects.filter(user=request.user, date=date)
+    return render(
+        request, "./calendarapp/day_list.html", {"events": events, "date": date}
+    )
 
 
 @login_required
