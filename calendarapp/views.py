@@ -137,7 +137,6 @@ def month_view(request, year, month):
             Event.objects.filter(user=request.user).values_list("date", flat=True)
         )
     ]
-
     prev_year = year if month > 1 else year - 1
     next_year = year if month < 12 else year + 1
     prev_month = month - 1 if month > 1 else 12
@@ -156,3 +155,6 @@ def month_view(request, year, month):
             "month": month,
         },
     )
+
+    return render(request, "./calendarapp/month_view.html", {"event_list": event_list})
+
