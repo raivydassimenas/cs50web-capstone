@@ -7,6 +7,8 @@
 <script defer src='https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js'></script>
 <script defer src="{% static 'js/month_view.js' %}"></script>
 {{ event_list|json_script:"event_list_data" }}
+{{ year|json_script:"year"}}
+{{ month|json_script:"month"}}
 {% endblock %}
 
 {% block body %}

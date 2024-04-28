@@ -11,5 +11,5 @@ urlpatterns = [
     path("event_list", views.event_list, name="event_list"),
     path("event/<int:event_id>/delete", views.event_delete, name="event_delete"),
     path("day_list/<str:date>", views.day_list, name="day_list"),
+    path("month_view/<int:year>/<int:month>", views.month_view, name="month_view"),
 ]
-

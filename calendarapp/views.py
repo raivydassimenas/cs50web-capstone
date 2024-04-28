@@ -147,4 +147,8 @@ def month_view(request, year, month):
             Event.objects.filter(user=request.user).values_list("date", flat=True)
         )
     ]
-    return render(request, "./calendarapp/month_view.html", {"event_list": event_list})
+    return render(
+        request,
+        "./calendarapp/month_view.html",
+        {"event_list": event_list, "year": year, "month": month},
+    )
