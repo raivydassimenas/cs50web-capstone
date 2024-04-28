@@ -32,10 +32,9 @@ for (let day = 1; day <= numDays; day++) {
   encodedDate = encodeURIComponent(date.toUTCString());
   const dt = DateTime.fromISO(date.toISOString()).toFormat("yyyy-MM-dd");
   if (eventDatesList.includes(dt)) {
-    dayElement.classList.add("hover:text-green-800");
-    console.log(dayElement.innerText);
+    dayElement.style.color = "blue";
   } else {
-    dayElement.classList.add("hover:text-black");
+    dayElement.style.color = "black";
   }
 
   dayElement.href = `/day_list/${encodedDate}`;

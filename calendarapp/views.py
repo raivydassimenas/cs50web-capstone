@@ -137,3 +137,14 @@ def event_delete(request, event_id):
     event = Event.objects.get(pk=event_id)
     event.delete()
     return HttpResponseRedirect(reverse("event_list"))
+
+
+@login_required()
+def month_view(request, year, month):
+    event_list = [
+        str(date)
+        for date in list(
+            Event.objects.filter(user=request.user).values_list("date", flat=True)
+        )
+    ]
+    return render(request, "./calendarapp/month_view.html", {"event_list": event_list})
