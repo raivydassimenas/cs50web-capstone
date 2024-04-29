@@ -16,23 +16,23 @@ The prerequisites for running it are Python 3.12, Pip 24.0, Node 22.0, NPM 10.5,
 
 Upon loading the application, the user is presented with a login screen.
 
-[!Login](screenshots/Login.png "Login screen")
+![Login](images/Login.png "Login screen")
 
 If this is his first time, he has to register providing his first and last names, email, and password.
 
-[!Register](screenshots/Registration.png "Registration screen")
+![Register](images/Registration.png "Registration screen")
 
 Then he is redirected to the main screen, where he can see the calendar of the current month. He can move to other months by pressing blue navigation buttons.
 
-[!Calendar](screenshots/Calendar.png "Calendar view")
+![Calendar](images/Calendar.png "Calendar view")
 
 He can view all of his events by pressing My Events button in the navigation bar. By pressing Delete button, he can delete an event.
 
-[!Events](screenshots/Events.png "My events view")
+![Events](images/Events.png "My events view")
 
 He can insert an event by pressing Add Event button in the navigation bar.
 
-[!Events](screenshots/Add%20event.png "Add event view").
+![Events](images/Add%20event.png "Add event view").
 
 If there is an event on a given day, this day is colored blue in the calendar view. By pressing on a day in calendar view, the user is redirected to that day's events view.
 
