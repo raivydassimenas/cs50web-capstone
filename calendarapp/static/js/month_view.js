@@ -22,6 +22,10 @@ const numDays = new Date(year, month, 0).getDate();
 
 const firstDayOfMonth = new Date(year, month - 1, 1).getDay();
 
+for (let i = 0; i < firstDayOfMonth; i++) {
+  daysContainer.appendChild(document.createElement("div"));
+}
+
 for (let day = 1; day <= numDays; day++) {
   const dayElement = document.createElement("a");
   dayElement.innerText = day.toString();
@@ -35,8 +39,5 @@ for (let day = 1; day <= numDays; day++) {
   }
 
   dayElement.href = `/day_list/${encodedDate}`;
-  if (day === 1) {
-    dayElement.classList.add(`col-start-${firstDayOfMonth + 1}`);
-  }
   daysContainer.appendChild(dayElement);
 }
