@@ -944,10 +944,18 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 87925c6 (Minor changes)
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+>>>>>>> c951065 (Add navigation, remove index)
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1280,16 +1288,20 @@ select {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+>>>>>>> c951065 (Add navigation, remove index)
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 .bg-slate-800 {
+<<<<<<< HEAD
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
@@ -1300,8 +1312,15 @@ select {
 }
 
 .bg-red-500 {
+=======
+>>>>>>> c951065 (Add navigation, remove index)
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-2 {
