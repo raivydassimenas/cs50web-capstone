@@ -32,7 +32,7 @@ He can view all of his events by pressing My Events button in the navigation bar
 
 He can insert an event by pressing Add Event button in the navigation bar.
 
-![Events](images/Add%20event.png "Add event view").
+![Events](images/Add%20event.png "Add event view")
 
 If there is an event on a given day, this day is colored blue in the calendar view. By pressing on a day in calendar view, the user is redirected to that day's events view.
 
