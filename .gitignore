@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 797c422 (Add README.md and screenshots)
 <<<<<<< HEAD
 calendarapp/migrations
 calendarapp/__pycache__
@@ -29,4 +32,17 @@ db.sqlite3
 /theme/__pycache__
 /.idea
 >>>>>>> 507b8cf (Update .gitignore)
+<<<<<<< HEAD
 >>>>>>> a13d4dc (Add .venv to .gitignore)
+=======
+=======
+db.sqlite3
+node_modules
+calendarapp/migrations
+venv
+calendarapp/__pycache__
+cs50web_final/__pycache__
+theme/__pycache__
+Dockerfile
+>>>>>>> 54ab264 (Add README.md and screenshots)
+>>>>>>> 797c422 (Add README.md and screenshots)
