@@ -1,11 +1,11 @@
 let DateTime = luxon.DateTime;
+const urlParams = new URLSearchParams(window.location.search);
 
+const year = JSON.parse(document.querySelector("#year").textContent);
+const month = JSON.parse(document.querySelector("#month").textContent);
 const eventDatesList = JSON.parse(
   document.querySelector("#event_list_data").textContent,
 );
-const year = JSON.parse(document.querySelector("#year").textContent);
-const month = JSON.parse(document.querySelector("#month").textContent);
-
 
 const daysContainer = document.querySelector("#days-container");
 daysContainer.innerHTML = "";
@@ -20,14 +20,14 @@ weekdays.forEach((day) => {
 
 const numDays = new Date(year, month, 0).getDate();
 
-const firstDayOfMonth = (new Date(year, month, 1)).getDay();
+const firstDayOfMonth = new Date(year, month - 1, 1).getDay();
 
 for (let day = 1; day <= numDays; day++) {
   const dayElement = document.createElement("a");
   dayElement.innerText = day.toString();
-  date = new Date(year, month, day);
-  encodedDate = encodeURIComponent(date.toUTCString());
+  date = new Date(year, month - 1, day);
   const dt = DateTime.fromISO(date.toISOString()).toFormat("yyyy-MM-dd");
+  const encodedDate = encodeURIComponent(dt);
   if (eventDatesList.includes(dt)) {
     dayElement.style.color = "blue";
   } else {

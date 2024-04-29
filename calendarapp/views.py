@@ -4,32 +4,21 @@ from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
 from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
-from datetime import datetime
+from datetime import datetime, date
+from dateutil.parser import parse
 import json
 import urllib.parse
 
 from .models import User, Event
 
 
-# Create your views here.
-
-
 def index(request):
     if request.user.is_authenticated:
-        event_list = [
-            str(date)
-            for date in list(
-                Event.objects.filter(user=request.user)
-                .values_list("date", flat=True)
-                .distinct()
-            )
-        ]
+        curr_year = date.today().year
+        curr_month = date.today().month
 
-        return render(
-            request,
-            "./calendarapp/index.html",
-            {"user": request.user, "event_list": event_list},
-        )
+        return HttpResponseRedirect(reverse("month_view", args=[curr_year, curr_month]))
+
     return HttpResponseRedirect(reverse("login"))
 
 
@@ -125,7 +114,7 @@ def event_list(request):
 @login_required
 def day_list(request, date):
     date = urllib.parse.unquote(date)
-    date = datetime.strptime(date, "%a, %d %b %Y %H:%M:%S GMT").date()
+    date = parse(date).date()
     events = Event.objects.filter(user=request.user, date=date)
     return render(
         request, "./calendarapp/day_list.html", {"events": events, "date": date}
@@ -147,8 +136,22 @@ def month_view(request, year, month):
             Event.objects.filter(user=request.user).values_list("date", flat=True)
         )
     ]
+
+    prev_year = year if month > 1 else year - 1
+    next_year = year if month < 12 else year + 1
+    prev_month = month - 1 if month > 1 else 12
+    next_month = month + 1 if month < 12 else 1
+
     return render(
         request,
         "./calendarapp/month_view.html",
-        {"event_list": event_list, "year": year, "month": month},
+        {
+            "event_list": event_list,
+            "prev_year": prev_year,
+            "next_year": next_year,
+            "prev_month": prev_month,
+            "next_month": next_month,
+            "year": year,
+            "month": month,
+        },
     )
