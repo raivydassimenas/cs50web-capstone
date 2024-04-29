@@ -1095,6 +1095,7 @@ select {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> e7bd562 (Add responsiveness)
 =======
 =======
@@ -1102,10 +1103,22 @@ select {
 >>>>>>> d06faff (Minor changes)
 =======
 =======
+>>>>>>> b71b74f (Add navigation, remove index)
+=======
 >>>>>>> aa58a08 (Minor changes)
 =======
 >>>>>>> 60b0d1b (Add event functionality)
+<<<<<<< HEAD
 >>>>>>> 87df929 (Add event functionality)
+=======
+=======
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+>>>>>>> f7422c7 (Add navigation, remove index)
+>>>>>>> b71b74f (Add navigation, remove index)
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1763,6 +1776,7 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1775,6 +1789,25 @@ select {
 
 =======
 >>>>>>> 87df929 (Add event functionality)
+=======
+=======
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+>>>>>>> f7422c7 (Add navigation, remove index)
+>>>>>>> b71b74f (Add navigation, remove index)
 .p-2 {
   padding: 0.5rem;
 }
