@@ -1,3 +1,9 @@
+
+db.sqlite3
+network/__pycache__
+network/migrations
+project4/__pycache__
+.venv
 db.sqlite3
 node_modules
 calendarapp/migrations
@@ -8,3 +14,4 @@ cs50web_final/__pycache__
 theme/__pycache__
 Dockerfile
 staticfiles
+>>>>>>> 77cb60d (Add README.md and screenshots)
