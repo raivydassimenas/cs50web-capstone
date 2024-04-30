@@ -11,15 +11,20 @@
 {% endblock %}
 
 {% block body %}
+<div>
 <h1 class="text-center font-bold text-xl">{{ month}}, {{ year }}</h1>
 <div class="flex items-center">
         <div>
-                <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-4 rounded" href="/month_view/{{ prev_year }}/{{ prev_month }}"><</a>
+                <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-4 rounded"
+                        href="/month_view/{{ prev_year }}/{{ prev_month }}">
+                        <</a>
         </div>
         <div class="grid grid-cols-7 w-1/2 mx-auto" id="days-container">
         </div>
         <div>
-                <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-4 rounded" href="/month_view/{{ next_year }}/{{ next_month }}">></a>
-        <div>
+                <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-4 rounded"
+                        href="/month_view/{{ next_year }}/{{ next_month }}">></a>
+        </div>
+</div>
 </div>
 {% endblock %}

@@ -13,7 +13,8 @@
     {% tailwind_css %}
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen">
+    <div class="flex-1">
     <nav class="bg-slate-800 p-2">
         <div class="container mx-auto">`
             <div class="flex items-center justify-between">
@@ -57,7 +58,8 @@
     </nav>
     {% block body %}
     {% endblock %}
-    <footer>
+    </div>
+    <footer class="mt-auto">
         <div class="text-right m-2">
             <p>&copy; 2024 Raivydas Šimėnas's Calendar App. All rights reserved.</p>
             <a class="m-2" href='https://pngtree.com/freepng/vector-calendar-icon_3996159.html'>png image from
