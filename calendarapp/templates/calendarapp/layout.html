@@ -6,8 +6,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Calendar App</title>
+
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
     <script defer src="{% static 'js/layout.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'calendarapp/output.css' %}">
+{% block styles %}
+{% endblock %}
     {% block script %}
     {% endblock %}
     {% tailwind_css %}

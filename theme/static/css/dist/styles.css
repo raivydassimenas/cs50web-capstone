@@ -910,6 +910,7 @@ select {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .m-2 {
   margin: 0.5rem;
 }
@@ -956,6 +957,27 @@ select {
 }
 
 >>>>>>> c951065 (Add navigation, remove index)
+=======
+.m-2 {
+  margin: 0.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+>>>>>>> e7bd562 (Add responsiveness)
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1041,39 +1063,64 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .h-10 {
   height: 2.5rem;
+=======
+.h-16 {
+  height: 4rem;
+>>>>>>> e7bd562 (Add responsiveness)
 }
 
 .h-6 {
   height: 1.5rem;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 .h-screen {
   height: 100vh;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .min-h-screen {
   min-height: 100vh;
+=======
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+>>>>>>> e7bd562 (Add responsiveness)
 }
 
 .w-1\/2 {
   width: 50%;
 }
 
+<<<<<<< HEAD
 .w-10 {
   width: 2.5rem;
+=======
+.w-16 {
+  width: 4rem;
+>>>>>>> e7bd562 (Add responsiveness)
 }
 
 .w-6 {
   width: 1.5rem;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 .w-96 {
   width: 24rem;
 }
@@ -1084,8 +1131,19 @@ select {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
+=======
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+>>>>>>> e7bd562 (Add responsiveness)
 .max-w-md {
   max-width: 28rem;
 }
@@ -1139,23 +1197,35 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 .flex-col {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 .content-start {
   align-content: flex-start;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 .items-end {
   align-items: flex-end;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 .items-center {
   align-items: center;
 }
@@ -1182,6 +1252,7 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1197,11 +1268,31 @@ select {
 .overflow-hidden {
   overflow: hidden;
 =======
+=======
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+>>>>>>> e7bd562 (Add responsiveness)
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1311,6 +1402,7 @@ select {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-red-500 {
 =======
 >>>>>>> c951065 (Add navigation, remove index)
@@ -1321,6 +1413,11 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+=======
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+>>>>>>> e7bd562 (Add responsiveness)
 }
 
 .p-2 {
@@ -1430,10 +1527,14 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 .text-right {
   text-align: right;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 =======
@@ -1446,6 +1547,8 @@ select {
 >>>>>>> 87925c6 (Minor changes)
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -1465,6 +1568,7 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 =======
@@ -1474,6 +1578,8 @@ select {
   line-height: 1.75rem;
 }
 
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1494,6 +1600,11 @@ select {
 ========
 >>>>>>>> 7aa2cc8 (Set up django-tailwind package):theme/static/css/dist/styles.css
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1547,8 +1658,11 @@ select {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -1767,6 +1881,9 @@ select {
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7bd562 (Add responsiveness)
 
 @media (min-width: 768px) {
   .md\:block {
@@ -1777,8 +1894,25 @@ select {
     display: none;
   }
 }
+<<<<<<< HEAD
 =======
 >>>>>>>> 7aa2cc8 (Set up django-tailwind package):theme/static/css/dist/styles.css
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 =======
 >>>>>>> 966a96f (Add event functionality)
+=======
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:inline {
+    display: inline;
+  }
+
+  .lg\:h-16 {
+    height: 4rem;
+  }
+}
+>>>>>>> e7bd562 (Add responsiveness)
