@@ -77,7 +77,6 @@ def logout_view(request):
     return HttpResponseRedirect(reverse("login"))
 
 
-
 @login_required
 def insert_event(request):
     if request.method == "POST":
