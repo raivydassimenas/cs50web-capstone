@@ -1,4 +1,4 @@
-{% load static tailwind_tags %}
+{% load tailwindcss %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@
 {% endblock %}
     {% block script %}
     {% endblock %}
-    {% tailwind_css %}
+    {% tailwindcss_include %}
 </head>
 
 <body class="flex flex-col min-h-screen">
