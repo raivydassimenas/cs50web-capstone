@@ -42,8 +42,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 class Event(models.Model):
     user = models.ForeignKey("User", on_delete=models.CASCADE)
     title = models.CharField(max_length=30)
-<<<<<<< HEAD
-<<<<<<< HEAD
     datet = models.DateTimeField()
     date = models.DateField()
     place = models.TextField()
@@ -53,12 +51,3 @@ class Event(models.Model):
     def save(self, *args, **kwargs):
         self.date = self.datet.date()
         super().save(*args, **kwargs)
-=======
-    time = models.DateTimeField()
-=======
-    date = models.DateTimeField()
->>>>>>> 11277d1 (Add event insertion functionality)
-    place = models.TextField()
-    description = models.TextField()
-    created = models.DateTimeField(auto_now_add=True)
->>>>>>> d136360 (Add Tailwind CSS support)

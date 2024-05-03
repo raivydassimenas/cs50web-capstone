@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
@@ -10,13 +9,5 @@
     "cross-env": "^7.0.3",
     "flatpickr": "^4.6.13",
     "postcss-simple-vars": "^7.0.1"
-=======
-  "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "tailwindcss": "^3.3.5"
-  },
-  "scripts": {
-    "dev": "npx tailwindcss -i ./calendarapp/static/calendarapp/styles.css -o ./calendarapp/static/calendarapp/output.css"
->>>>>>> d136360 (Add Tailwind CSS support)
   }
 }

@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 /*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
+<<<<<<< HEAD
 =======
 <<<<<<<< HEAD:calendarapp/static/calendarapp/output.css
 /* styles.css */
@@ -24,6 +24,8 @@
 >>>>>>>> 7d25f10 (Set up django-tailwind package):theme/static/css/dist/styles.css
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -55,12 +57,12 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
-<<<<<<< HEAD
 7. Disable tap highlights on iOS
 */
 
 html,
 :host {
+<<<<<<< HEAD
 =======
 */
 
@@ -70,6 +72,8 @@ html {
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -79,8 +83,8 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-<<<<<<< HEAD
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+<<<<<<< HEAD
 =======
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 <<<<<<< HEAD
@@ -88,20 +92,24 @@ html {
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
-<<<<<<< HEAD
   -webkit-tap-highlight-color: transparent;
   /* 7 */
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 }
 
 /*
@@ -173,11 +181,11 @@ strong {
 }
 
 /*
-<<<<<<< HEAD
 1. Use the user's configured `mono` font-family by default.
 2. Use the user's configured `mono` font-feature-settings by default.
 3. Use the user's configured `mono` font-variation-settings by default.
 4. Correct the odd `em` font sizing in all browsers.
+<<<<<<< HEAD
 =======
 1. Use the user's configured `mono` font family by default.
 2. Correct the odd `em` font sizing in all browsers.
@@ -186,6 +194,8 @@ strong {
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 */
 
 code,
@@ -194,13 +204,13 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-<<<<<<< HEAD
   font-feature-settings: normal;
   /* 2 */
   font-variation-settings: normal;
   /* 3 */
   font-size: 1em;
   /* 4 */
+<<<<<<< HEAD
 =======
   font-size: 1em;
   /* 2 */
@@ -209,6 +219,8 @@ pre {
 =======
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 }
 
 /*
@@ -281,6 +293,7 @@ textarea {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   letter-spacing: inherit;
   /* 1 */
 =======
@@ -304,6 +317,10 @@ textarea {
   /* 1 */
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+  letter-spacing: inherit;
+  /* 1 */
+>>>>>>> 29ed6d4 (Temp commit)
   color: inherit;
   /* 1 */
   margin: 0;
@@ -327,6 +344,7 @@ select {
 */
 
 button,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -360,6 +378,11 @@ input:where([type='reset']),
 input:where([type='submit']) {
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+>>>>>>> 29ed6d4 (Temp commit)
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -814,6 +837,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 966a96f (Add event functionality)
 =======
@@ -822,10 +846,13 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
   --tw-contain-size:  ;
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -843,6 +870,8 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 }
 
 ::backdrop {
@@ -897,6 +926,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 966a96f (Add event functionality)
 =======
@@ -905,15 +935,12 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
   --tw-contain-size:  ;
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
-<<<<<<< HEAD
-=======
->>>>>>> 7d25f10 (Set up django-tailwind package)
-=======
->>>>>>> 60b0d1b (Add event functionality)
 }
 
 =======
@@ -1013,6 +1040,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .m-2 {
   margin: 0.5rem;
 }
@@ -1125,6 +1153,8 @@ select {
 >>>>>>> b71b74f (Add navigation, remove index)
 =======
 =======
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .m-2 {
   margin: 0.5rem;
 }
@@ -1144,8 +1174,11 @@ select {
   margin-bottom: 0.5rem;
 }
 
+<<<<<<< HEAD
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1176,14 +1209,18 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1122e6b (Add event adding functionality)
 =======
 >>>>>>> d06faff (Minor changes)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .mt-auto {
   margin-top: auto;
 }
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<<< HEAD:calendarapp/static/calendarapp/output.css
@@ -1226,6 +1263,8 @@ select {
 =======
 >>>>>>> aa58a08 (Minor changes)
 >>>>>>> d06faff (Minor changes)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .block {
   display: block;
 }
@@ -1242,11 +1281,6 @@ select {
   display: flex;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<<< HEAD:calendarapp/static/calendarapp/output.css
-========
->>>>>>> 7d25f10 (Set up django-tailwind package)
 .table {
   display: table;
 }
@@ -1267,6 +1301,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
 =======
@@ -1281,12 +1316,17 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+.h-10 {
+  height: 2.5rem;
+>>>>>>> 29ed6d4 (Temp commit)
 }
 
 .h-6 {
   height: 1.5rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1304,10 +1344,13 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .h-screen {
   height: 100vh;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1330,15 +1373,19 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+.min-h-screen {
+  min-height: 100vh;
+>>>>>>> 29ed6d4 (Temp commit)
 }
 
 .w-1\/2 {
   width: 50%;
 }
 
-<<<<<<< HEAD
 .w-10 {
   width: 2.5rem;
+<<<<<<< HEAD
 =======
 .w-16 {
   width: 4rem;
@@ -1347,12 +1394,15 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 }
 
 .w-6 {
   width: 1.5rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1370,6 +1420,8 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .w-96 {
   width: 24rem;
 }
@@ -1384,6 +1436,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
@@ -1416,10 +1469,13 @@ select {
 
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .max-w-md {
   max-width: 28rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1432,13 +1488,15 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .max-w-sm {
   max-width: 24rem;
 }
 
-<<<<<<< HEAD
 .flex-1 {
   flex: 1 1 0%;
+<<<<<<< HEAD
 =======
 .w-1\/2 {
   width: 50%;
@@ -1462,6 +1520,10 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+}
+
+>>>>>>> 29ed6d4 (Temp commit)
 .border-collapse {
   border-collapse: collapse;
 }
@@ -1474,6 +1536,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
@@ -1482,6 +1545,8 @@ select {
 =======
 >>>>>>> 327da3a (Add event adding functionality)
 >>>>>>> 1122e6b (Add event adding functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1491,6 +1556,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 =======
@@ -1505,6 +1571,8 @@ select {
 =======
 >>>>>>> 327da3a (Add event adding functionality)
 >>>>>>> 1122e6b (Add event adding functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
@@ -1513,6 +1581,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e7bd562 (Add responsiveness)
 =======
@@ -1521,10 +1590,13 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .flex-col {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1542,6 +1614,8 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .content-start {
   align-content: flex-start;
 }
@@ -1550,6 +1624,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e7bd562 (Add responsiveness)
 =======
@@ -1558,10 +1633,13 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .items-end {
   align-items: flex-end;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1581,10 +1659,13 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .items-center {
   align-items: center;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1597,6 +1678,8 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .justify-end {
   justify-content: flex-end;
 }
@@ -1610,12 +1693,11 @@ select {
   justify-content: center;
 }
 
-=======
->>>>>>> 7d25f10 (Set up django-tailwind package)
 .justify-between {
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1667,6 +1749,8 @@ select {
 >>>>>>> 10cba69 (Set up django-tailwind package)
 =======
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1683,23 +1767,6 @@ select {
   overflow: hidden;
 }
 
-=======
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-<<<<<<< HEAD
-<<<<<<<< HEAD:calendarapp/static/calendarapp/output.css
-========
->>>>>>> 7d25f10 (Set up django-tailwind package)
-=======
-.overflow-hidden {
-  overflow: hidden;
-}
-
->>>>>>> 60b0d1b (Add event functionality)
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1718,28 +1785,35 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
 =======
 >>>>>>> 1122e6b (Add event adding functionality)
 =======
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 966a96f (Add event functionality)
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .border-red-400 {
   --tw-border-opacity: 1;
   border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1757,11 +1831,14 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .border-red-500 {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1800,6 +1877,8 @@ select {
 
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -1814,32 +1893,38 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 10cba69 (Set up django-tailwind package)
 =======
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 966a96f (Add event functionality)
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .bg-red-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 
-<<<<<<< HEAD
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1906,6 +1991,8 @@ select {
 >>>>>>> 87df929 (Add event functionality)
 =======
 =======
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -1922,6 +2009,7 @@ select {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f7422c7 (Add navigation, remove index)
 <<<<<<< HEAD
 >>>>>>> b71b74f (Add navigation, remove index)
@@ -1934,25 +2022,21 @@ select {
 
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .p-2 {
   padding: 0.5rem;
 }
 
-=======
->>>>>>> 7d25f10 (Set up django-tailwind package)
 .p-4 {
   padding: 1rem;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<<< HEAD:calendarapp/static/calendarapp/output.css
-========
->>>>>>> 7d25f10 (Set up django-tailwind package)
 .p-8 {
   padding: 2rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1969,6 +2053,8 @@ select {
 =======
 >>>>>>> aa58a08 (Minor changes)
 >>>>>>> d06faff (Minor changes)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1983,6 +2069,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 966a96f (Add event functionality)
 =======
@@ -1991,11 +2078,14 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2021,11 +2111,14 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2045,11 +2138,14 @@ select {
 =======
 >>>>>>> 327da3a (Add event adding functionality)
 >>>>>>> 1122e6b (Add event adding functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2062,6 +2158,8 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2073,6 +2171,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d06faff (Minor changes)
 =======
@@ -2093,10 +2192,13 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 }
 
 .pb-8 {
   padding-bottom: 2rem;
+<<<<<<< HEAD
 =======
 .px-4 {
   padding-left: 1rem;
@@ -2106,6 +2208,8 @@ select {
 =======
 >>>>>>> 327da3a (Add event adding functionality)
 >>>>>>> 1122e6b (Add event adding functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 }
 
 .pt-6 {
@@ -2118,6 +2222,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 966a96f (Add event functionality)
 =======
@@ -2128,10 +2233,13 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .text-center {
   text-align: center;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2144,10 +2252,13 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .text-right {
   text-align: right;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2195,6 +2306,8 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -2208,6 +2321,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 966a96f (Add event functionality)
 =======
@@ -2218,18 +2332,19 @@ select {
   font-size: 1rem;
   line-height: 1.5rem;
 =======
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-<<<<<<< HEAD
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
->>>>>>> 60b0d1b (Add event functionality)
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2248,6 +2363,8 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2255,6 +2372,7 @@ select {
 
 .text-xl {
   font-size: 1.25rem;
+<<<<<<< HEAD
 =======
 >>>>>>>> 7d25f10 (Set up django-tailwind package):theme/static/css/dist/styles.css
 .text-lg {
@@ -2282,6 +2400,8 @@ select {
 
 .text-lg {
   font-size: 1.125rem;
+=======
+>>>>>>> 29ed6d4 (Temp commit)
   line-height: 1.75rem;
 }
 
@@ -2289,6 +2409,7 @@ select {
   font-weight: 700;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<<< HEAD:calendarapp/static/calendarapp/output.css
@@ -2305,6 +2426,8 @@ select {
 ========
 >>>>>>> 7d25f10 (Set up django-tailwind package)
 >>>>>>> 10cba69 (Set up django-tailwind package)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .font-medium {
   font-weight: 500;
 }
@@ -2317,6 +2440,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
@@ -2325,10 +2449,13 @@ select {
 =======
 >>>>>>> 327da3a (Add event adding functionality)
 >>>>>>> 1122e6b (Add event adding functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .leading-tight {
   line-height: 1.25;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2346,11 +2473,12 @@ select {
 =======
 >>>>>>> 327da3a (Add event adding functionality)
 >>>>>>> 1122e6b (Add event adding functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .tracking-normal {
   letter-spacing: 0em;
 }
 
-<<<<<<< HEAD
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -2361,6 +2489,7 @@ select {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2378,11 +2507,14 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2397,6 +2529,8 @@ select {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
 =======
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -2417,6 +2551,7 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -2477,10 +2612,13 @@ select {
 >>>>>>> 10cba69 (Set up django-tailwind package)
 =======
 >>>>>>> 1122e6b (Add event adding functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .opacity-90 {
   opacity: 0.9;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 87925c6 (Minor changes)
@@ -2494,6 +2632,8 @@ select {
 =======
 <<<<<<< HEAD
 >>>>>>> d06faff (Minor changes)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -2501,14 +2641,13 @@ select {
 <<<<<<< HEAD
 }
 
-=======
->>>>>>> 60b0d1b (Add event functionality)
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2549,6 +2688,8 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -2575,32 +2716,12 @@ select {
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 60b0d1b (Add event functionality)
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> 7d25f10 (Set up django-tailwind package)
-=======
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
->>>>>>> 327da3a (Add event adding functionality)
-=======
->>>>>>> aa58a08 (Minor changes)
-=======
->>>>>>> 60b0d1b (Add event functionality)
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -2618,6 +2739,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d42b9c8 (Add event adding functionality)
 =======
@@ -2626,11 +2748,14 @@ select {
 =======
 >>>>>>> 327da3a (Add event adding functionality)
 >>>>>>> 1122e6b (Add event adding functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2643,12 +2768,13 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .hover\:bg-red-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
-<<<<<<< HEAD
 .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -2663,6 +2789,7 @@ select {
   opacity: 1;
 }
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 7aa2cc8 (Set up django-tailwind package)
@@ -2683,11 +2810,14 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .focus\:border-blue-300:focus {
   --tw-border-opacity: 1;
   border-color: rgb(147 197 253 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2700,11 +2830,14 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .focus\:border-indigo-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2722,6 +2855,8 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2736,6 +2871,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 966a96f (Add event functionality)
 =======
@@ -2744,6 +2880,8 @@ select {
 =======
 >>>>>>> 60b0d1b (Add event functionality)
 >>>>>>> 87df929 (Add event functionality)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 
 .focus\:ring-indigo-500:focus {
   --tw-ring-opacity: 1;
@@ -2764,6 +2902,7 @@ select {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e7bd562 (Add responsiveness)
 =======
@@ -2772,6 +2911,8 @@ select {
 =======
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
 
 @media (min-width: 768px) {
   .md\:block {
@@ -2782,6 +2923,7 @@ select {
     display: none;
   }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2837,3 +2979,5 @@ select {
 }
 >>>>>>> 2e6c3fb (Add responsiveness)
 >>>>>>> b8770ee (Add responsiveness)
+=======
+>>>>>>> 29ed6d4 (Temp commit)
