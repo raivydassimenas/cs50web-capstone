@@ -7,3 +7,4 @@ calendarapp/migrations
 cs50web_final/__pycache__
 theme/__pycache__
 Dockerfile
+staticfiles
