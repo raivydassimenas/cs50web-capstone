@@ -3,4 +3,3 @@ db.sqlite3
 calendarapp/__pycache__
 calendarapp/migrations
 cs50web_capstone/__pycache__
-static
