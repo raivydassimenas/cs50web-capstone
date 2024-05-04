@@ -14,10 +14,10 @@ from .models import User, Event
 
 def index(request):
     if request.user.is_authenticated:
-        curr_year = date.today().year
-        curr_month = date.today().month
+        year = date.today().year
+        month = date.today().month
 
-        return HttpResponseRedirect(reverse("month_view", args=[curr_year, curr_month]))
+        return HttpResponseRedirect(reverse("month_view", args=[year, month]))
 
     return HttpResponseRedirect(reverse("login"))
 
@@ -136,6 +136,10 @@ def month_view(request, year, month):
             Event.objects.filter(user=request.user).values_list("date", flat=True)
         )
     ]
+    next_year = year if month < 12 else date.today().year + 1
+    prev_year  = year if month > 1 else date.today().year - 1
+    next_month = month + 1 if month < 12 else 1
+    prev_month = month - 1 if month > 1 else 12
 
-    return render(request, "./calendarapp/month_view.html", {"event_list": event_list})
+    return render(request, "./calendarapp/month_view.html", {"event_list": event_list, "next_year": next_year, "prev_year": prev_year, "next_month": next_month, "prev_month": prev_month, "month": month, "year": year})
 
