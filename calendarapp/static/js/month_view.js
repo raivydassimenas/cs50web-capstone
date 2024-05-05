@@ -33,9 +33,11 @@ for (let day = 1; day <= numDays; day++) {
   const dt = DateTime.fromISO(date.toISOString()).toFormat("yyyy-MM-dd");
   const encodedDate = encodeURIComponent(dt);
   if (eventDatesList.includes(dt)) {
-    dayElement.style.color = "blue";
+    dayElement.classList.remove("text-black");
+    dayElement.classList.add("text-blue");
   } else {
-    dayElement.style.color = "black";
+    dayElement.classList.remove("text-blue");
+    dayElement.classList.add("text-black");
   }
 
   dayElement.href = `/day_list/${encodedDate}`;
