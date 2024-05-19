@@ -13,6 +13,7 @@ There was no requirement to write a calendar app nor anything similar for the co
 The prerequisites for running it are Python 3.12, Pip 24.0, Node 22.0, NPM 10.5, and SQLite 3.43. 
 - Clone the repository locally
 - In the calendarapp directory create migrations folder with an empty __init__.py  file in it. Do the same in cs50web_capstone directory
+- In the project directory, create a .env file with the SECRET_KEY variable set to a random string
 - In the project directory, create a virtual Python environment: `python -m venv venv`
 - Activate it: `source venv/bin/activate`
 - Install Python packages with `pip install -r requirements.txt`
