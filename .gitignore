@@ -5,3 +5,4 @@ calendarapp/migrations
 cs50web_capstone/__pycache__
 cs50web_capstone/migrations
 node_modules
+.env
