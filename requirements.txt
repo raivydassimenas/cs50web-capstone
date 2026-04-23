@@ -2,6 +2,6 @@ asgiref==3.8.1
 Django==5.1.14
 django-browser-reload==1.12.1
 python-dateutil==2.9.0.post0
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 six==1.16.0
 sqlparse==0.5.4
