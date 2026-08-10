@@ -1,5 +1,5 @@
 asgiref==3.8.1
-Django==5.1.14
+Django==5.2.16
 django-browser-reload==1.12.1
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.2
